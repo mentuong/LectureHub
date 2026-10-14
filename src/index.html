@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LectureHub - Learn and Manage Lectures</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation" class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="brand" aria-label="LectureHub Home">LectureHub</a>
+        <ul class="nav-links">
+          <li><a href="#lectures" tabindex="0">Lectures</a></li>
+          <li><a href="#about" tabindex="0">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero" aria-label="Hero section">
+      <div class="container hero-container">
+        <h1>Discover and Manage Your Learning Journey</h1>
+        <p>Explore thousands of lectures from expert instructors anytime, anywhere.</p>
+        <a href="#lectures" class="btn-primary" role="button">Browse Lectures</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="search-filters" aria-label="Search and filter lectures" class="container search-filters">
+      <form role="search" aria-label="Search lectures" class="search-form">
+        <label for="lecture-search" class="visually-hidden">Search lectures</label>
+        <input type="search" id="lecture-search" name="lecture-search" placeholder="Search lectures..." aria-describedby="search-desc" />
+        <span id="search-desc" class="visually-hidden">Enter keywords to search lectures</span>
+      </form>
+
+      <fieldset class="category-filters" aria-label="Filter lectures by category">
+        <legend>Categories</legend>
+        <div class="filters">
+          <label><input type="checkbox" name="category" value="technology" /> Technology</label>
+          <label><input type="checkbox" name="category" value="business" /> Business</label>
+          <label><input type="checkbox" name="category" value="art" /> Art</label>
+          <label><input type="checkbox" name="category" value="science" /> Science</label>
+          <label><input type="checkbox" name="category" value="health" /> Health</label>
+        </div>
+      </fieldset>
+    </section>
+
+    <section id="lectures" aria-label="Lecture listings" class="container lectures">
+      <ul class="lecture-list" role="list">
+        <li class="lecture-card" tabindex="0">
+          <h2 class="lecture-title">Introduction to JavaScript</h2>
+          <p class="lecture-description">Learn the fundamentals of JavaScript, the programming language of the web.</p>
+          <p class="lecture-meta">Instructor: Jane Doe | Duration: 2h 30m</p>
+        </li>
+        <li class="lecture-card" tabindex="0">
+          <h2 class="lecture-title">Business Strategy Essentials</h2>
+          <p class="lecture-description">Understand key concepts and frameworks to develop effective business strategies.</p>
+          <p class="lecture-meta">Instructor: John Smith | Duration: 3h 15m</p>
+        </li>
+        <li class="lecture-card" tabindex="0">
+          <h2 class="lecture-title">Digital Painting Basics</h2>
+          <p class="lecture-description">Explore techniques and tools for creating stunning digital artwork.</p>
+          <p class="lecture-meta">Instructor: Emily Clark | Duration: 1h 45m</p>
+        </li>
+        <li class="lecture-card" tabindex="0">
+          <h2 class="lecture-title">Fundamentals of Physics</h2>
+          <p class="lecture-description">Dive into the principles that govern the physical world around us.</p>
+          <p class="lecture-meta">Instructor: Dr. Alan Turing | Duration: 4h 00m</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#about" tabindex="0">About</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 LectureHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

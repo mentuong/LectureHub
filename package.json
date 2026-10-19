@@ -1,0 +1,16 @@
+{
+  "name": "ai-sales-gateway-root",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "gateway"
+  ],
+  "scripts": {
+    "build": "npm run build -w gateway",
+    "typecheck": "npm run typecheck -w gateway",
+    "test": "npm run test -w gateway"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
